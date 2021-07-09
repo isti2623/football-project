@@ -1,0 +1,73 @@
+body{
+    margin: 50 auto ;
+}
+.container{
+    display: flex;
+    padding-bottom: 550px;
+}
+.half-width{
+    width: 30%;
+    padding-left: 5%;
+}
+
+.football-img{
+    padding-top: 300px;
+    position: relative;
+    right: 360px;
+    top: 120px;
+    transition: transform 1s ease-out 0.3s;
+    
+}
+
+
+.football-img :hover{
+    padding-top: 300px;
+    position: absolute;
+    right: -840px;
+    top: -25px;
+    z-index: 1;
+
+}
+
+
+.top-banner{
+    background-image: url("../field.jpg");
+    background-repeat: no-repeat;
+    width: 100%;
+}
+.neymar-img{
+    width: 100%;
+    position: relative;
+    right: 30;
+    padding-top: 150px;
+    top: 50;
+}
+.messi-img{
+    width: 100%;
+    position: relative;
+    padding-top: 150px;
+    right: 30;
+    top: 50;
+}
+/**********/
+
+
+
+
+.top-banner:hover .football-img{
+    transform: translate(1150px, 15px);
+    z-index: 1;
+}
+
+.neymar-img {
+    transition: transform 0.2s ease-in-out;
+}
+
+.field:hover .neymar-img {
+    transform: rotate(-60deg);
+    transform-origin: top right;
+}
+
+
+
+
